@@ -9,9 +9,10 @@ type ResponseType = {
 };
 
 export const auth = (
+  stateKey: string,
   callback: (code: string, error: boolean | null, errMsg: string) => void
 ) => {
-  Tiktok.auth((resp: ResponseType) => {
+  Tiktok.auth(stateKey, (resp: ResponseType) => {
     if (Platform.OS === 'ios') {
       switch (resp.status) {
         case response.success:
@@ -35,36 +36,6 @@ export const auth = (
   });
 };
 
-export const share = (
-  path: string,
-  callback: (code: string | null) => void
-) => {
-  Tiktok.share(path, (resp: number) => {
-    if (Platform.OS === 'ios') {
-      switch (resp) {
-        case response.success:
-          callback('PUBLISHED');
-          break;
-        case response.networkError:
-          callback('NETWORK_ERROR');
-          break;
-        case response.canceled:
-          callback('SHARING_CANCELED');
-          break;
-        case response.failed:
-          callback('SHARING_FAILED');
-          break;
-        case response.unsupported:
-          callback('UNSUPPORTED');
-          break;
-        default:
-          null;
-      }
-    } else {
-      callback(null);
-    }
-  });
-};
 
 export const init = (key: string) => {
   if (Platform.OS === 'android') {

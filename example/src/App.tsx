@@ -1,39 +1,31 @@
 import React, { useEffect } from 'react';
 import { Button, StyleSheet, View } from 'react-native';
-import Picker from 'react-native-image-crop-picker';
-import { auth, share, init, events } from 'react-native-tiktok';
+import { auth, init, events } from 'react-native-tiktok';
 
 export default function App() {
   useEffect(() => {
-    const ev = events.addListener('onShareCompleted', (resp) => {
-      console.warn(resp);
-    });
-
-    return () => ev.remove();
+      const authListener = events.addListener('onAuthCompleted', (resp) => {
+        console.log(resp.code);
+        console.log(resp.status);
+      });
+    
+      return () => {
+        events.remove(authListener)();
+      }
   }, []);
 
+  const startConnection = () => {
+    init('aw4cxi3r4cn9s9hj');
+    auth('xxxx', (code, error, errMsg) => {
+      console.log(code, error, errMsg);
+    });
+
+  }
   return (
     <View style={styles.container}>
       <Button
-        onPress={() => {
-          auth((code, error, errMsg) => {
-            console.log(code, error, errMsg);
-          });
-        }}
+        onPress={startConnection}
         title="Auth"
-      />
-      <Button
-        onPress={() => {
-          Picker.openPicker({
-            mediaType: 'video',
-          }).then((media) => {
-            init('awhu8hzuq0o3b0n8');
-            share(media.path, (code) => {
-              console.log(code);
-            });
-          });
-        }}
-        title="Share"
       />
     </View>
   );

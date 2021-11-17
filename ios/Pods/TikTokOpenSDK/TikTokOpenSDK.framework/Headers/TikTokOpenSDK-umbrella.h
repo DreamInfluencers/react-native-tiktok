@@ -13,8 +13,6 @@
 #import "TikTokOpenSDKApplicationDelegate.h"
 #import "TikTokOpenSDKAuth.h"
 #import "TikTokOpenSDKObjects.h"
-#import "TikTokOpenSDKShare.h"
-
 FOUNDATION_EXPORT double TikTokOpenSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char TikTokOpenSDKVersionString[];
 

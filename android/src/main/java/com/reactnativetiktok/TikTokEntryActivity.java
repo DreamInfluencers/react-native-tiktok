@@ -11,7 +11,6 @@ import com.bytedance.sdk.open.aweme.api.TiktokOpenApi;
 import com.bytedance.sdk.open.aweme.authorize.model.Authorization;
 import com.bytedance.sdk.open.aweme.common.model.BaseReq;
 import com.bytedance.sdk.open.aweme.common.model.BaseResp;
-import com.bytedance.sdk.open.aweme.share.Share;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
@@ -40,11 +39,6 @@ public class TikTokEntryActivity extends ReactActivity implements TikTokApiEvent
             params.putString("code", response.authCode);
             ReactContext ctx = getReactNativeHost().getReactInstanceManager().getCurrentReactContext();
             ctx.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onAuthCompleted", params);
-            finish();
-        } else if (baseResp instanceof Share.Response) {
-            Share.Response response = (Share.Response) baseResp;
-            ReactContext ctx = getReactNativeHost().getReactInstanceManager().getCurrentReactContext();
-            ctx.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onShareCompleted", response.subErrorCode);
             finish();
         }
     }
