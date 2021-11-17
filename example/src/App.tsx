@@ -4,14 +4,14 @@ import { auth, init, events } from 'react-native-tiktok';
 
 export default function App() {
   useEffect(() => {
-      const authListener = events.addListener('onAuthCompleted', (resp) => {
-        console.log(resp.code);
-        console.log(resp.status);
-      });
-    
-      return () => {
-        events.remove(authListener)();
-      }
+    const authListener = events.addListener('onAuthCompleted', (resp) => {
+      console.log(resp.code);
+      console.log(resp.status);
+    });
+    return () => {
+      // @ts-ignore
+      events.remove(authListener)();
+    };
   }, []);
 
   const startConnection = () => {
@@ -19,14 +19,10 @@ export default function App() {
     auth('xxxx', (code, error, errMsg) => {
       console.log(code, error, errMsg);
     });
-
-  }
+  };
   return (
     <View style={styles.container}>
-      <Button
-        onPress={startConnection}
-        title="Auth"
-      />
+      <Button onPress={startConnection} title="Auth" />
     </View>
   );
 }

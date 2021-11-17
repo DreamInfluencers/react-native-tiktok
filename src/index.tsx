@@ -36,7 +36,6 @@ export const auth = (
   });
 };
 
-
 export const init = (key: string) => {
   if (Platform.OS === 'android') {
     Tiktok.init(key);
