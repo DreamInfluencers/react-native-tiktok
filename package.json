@@ -1,6 +1,13 @@
 {
-  "name": "react-native-tiktok",
+  "name": "@dreaminfluencers/react-native-tiktok",
   "version": "1.0.11",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dreaminfluencers/react-native-tiktok.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "description": "Authorize user profile",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -36,16 +43,12 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/Lg0gs/react-native-tiktok",
   "author": "Lg0gs <lgogsadze93@gmail.com> (https://github.com/Lg0gs)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lg0gs/react-native-tiktok/issues"
   },
   "homepage": "https://github.com/Lg0gs/react-native-tiktok#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
@@ -79,8 +82,7 @@
     ]
   },
   "husky": {
-    "hooks": {
-    }
+    "hooks": {}
   },
   "commitlint": {
     "extends": [
