@@ -11,9 +11,12 @@ class Tiktok: UIViewController {
     let scopesSet = NSOrderedSet(array:scopes)
     let request = TikTokOpenSDKAuthRequest()
     request.permissions = scopesSet
-    request.state = stateKey;
+    request.state = stateKey
+
+    let presentedViewController = RCTPresentedViewController()
+
     DispatchQueue.main.async {
-      request.send(self, completion: { resp -> Void in
+      request.send(presentedViewController!, completion: { resp -> Void in
         callback([
           ["status": resp.errCode.rawValue, "code": resp.code]
         ])

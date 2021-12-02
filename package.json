@@ -1,6 +1,6 @@
 {
   "name": "react-native-tiktok",
-  "version": "1.0.1",
+  "version": "1.0.11",
   "description": "Authorize user profile",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -80,8 +80,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
     }
   },
   "commitlint": {
