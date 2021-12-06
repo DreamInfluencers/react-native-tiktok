@@ -1,13 +1,10 @@
 import { NativeModules, NativeEventEmitter, Platform } from 'react-native';
 import { response } from './response';
-
 const { Tiktok } = NativeModules;
-
 type ResponseType = {
   status: number;
   code: string;
 };
-
 export const auth = (
   stateKey: string,
   callback: (code: string, error: boolean | null, errMsg: string) => void
@@ -27,6 +24,12 @@ export const auth = (
         case response.unsupported:
           callback('', true, 'Unsupported');
           break;
+        case response.failed:
+          callback('', true, 'Request failed');
+          break;
+        case response.canceled:
+          callback('', true, 'Connection cancelled');
+          break;
         default:
           null;
       }
@@ -35,14 +38,11 @@ export const auth = (
     }
   });
 };
-
 export const init = (key: string) => {
   if (Platform.OS === 'android') {
     Tiktok.init(key);
   }
 };
-
 const addListener = (_listener: string, _event: any) => {};
-
 export const events =
   Platform.OS === 'android' ? new NativeEventEmitter(Tiktok) : { addListener };
