@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react';
-import {Button, StyleSheet, View} from 'react-native';
-import {auth, init, events} from '../';
+import React, { useEffect } from 'react';
+import { Button, StyleSheet, View } from 'react-native';
+// @ts-ignore
+import { auth, init, events } from '@dreaminfluencers/react-native-tiktok';
 
 export default function App() {
   useEffect(() => {
