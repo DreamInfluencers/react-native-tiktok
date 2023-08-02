@@ -1,16 +1,34 @@
 PODS:
-  - TikTokOpenSDK (5.0.0)
+  - TikTokOpenAuthSDK (2.2.0):
+    - TikTokOpenAuthSDK/Auth (= 2.2.0)
+    - TikTokOpenSDKCore (= 2.2.0)
+  - TikTokOpenAuthSDK/Auth (2.2.0):
+    - TikTokOpenSDKCore (= 2.2.0)
+  - TikTokOpenSDKCore (2.2.0):
+    - TikTokOpenSDKCore/Core (= 2.2.0)
+  - TikTokOpenSDKCore/Core (2.2.0)
+  - TikTokOpenShareSDK (2.2.0):
+    - TikTokOpenSDKCore (= 2.2.0)
+    - TikTokOpenShareSDK/Share (= 2.2.0)
+  - TikTokOpenShareSDK/Share (2.2.0):
+    - TikTokOpenSDKCore (= 2.2.0)
 
 DEPENDENCIES:
-  - TikTokOpenSDK (~> 5.0.0)
+  - TikTokOpenAuthSDK
+  - TikTokOpenSDKCore
+  - TikTokOpenShareSDK
 
 SPEC REPOS:
   trunk:
-    - TikTokOpenSDK
+    - TikTokOpenAuthSDK
+    - TikTokOpenSDKCore
+    - TikTokOpenShareSDK
 
 SPEC CHECKSUMS:
-  TikTokOpenSDK: a63564ea4dc1fabc56352bf7aa9ddc386cdb63b6
+  TikTokOpenAuthSDK: 171f5768f0ee45f0afa668bfa6b4805e6553189f
+  TikTokOpenSDKCore: 7cf1784799d40cc33fb70d5c314603ae4f49ecb6
+  TikTokOpenShareSDK: 2612b9ff5ed93c6b3ef81a798ce803a838ec3fa8
 
-PODFILE CHECKSUM: 8d42bd334b852726cbc4757006ffc25b49f26532
+PODFILE CHECKSUM: f0cb02776fa405336bf9dcc5057196a2429ffc96
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.12.1

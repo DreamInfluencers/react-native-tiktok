@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		407409416757443DC50CF039 /* Pods_Tiktok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F23E5843155DA855DFCE88 /* Pods_Tiktok.framework */; };
+		94F6FCC58087A3EF53B29C0A /* Pods_Tiktok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB6DD4891DCE7E392256CCF /* Pods_Tiktok.framework */; };
 		F4FF95D7245B92E800C19C63 /* Tiktok.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* Tiktok.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +25,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libTiktok.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiktok.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB6DD4891DCE7E392256CCF /* Pods_Tiktok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiktok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532E130E1B15D9F85B6823F2 /* Pods-Tiktok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiktok.debug.xcconfig"; path = "Target Support Files/Pods-Tiktok/Pods-Tiktok.debug.xcconfig"; sourceTree = "<group>"; };
-		62F23E5843155DA855DFCE88 /* Pods_Tiktok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiktok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12056921E248E79621937C0 /* Pods-Tiktok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiktok.release.xcconfig"; path = "Target Support Files/Pods-Tiktok/Pods-Tiktok.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Tiktok.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiktok.m; sourceTree = "<group>"; };
 		D1BD829026BBE4F500F3A7AE /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				407409416757443DC50CF039 /* Pods_Tiktok.framework in Frameworks */,
+				94F6FCC58087A3EF53B29C0A /* Pods_Tiktok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,7 @@
 		319BC826D4CF1B114ABE22BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62F23E5843155DA855DFCE88 /* Pods_Tiktok.framework */,
+				3CB6DD4891DCE7E392256CCF /* Pods_Tiktok.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

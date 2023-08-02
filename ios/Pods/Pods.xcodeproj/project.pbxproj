@@ -6,73 +6,185 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		0026B007D5D7066966D3EEDABF038BFC /* TikTokOpenSDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = CEC4D8F49FCEB9968221D6EE5F42C320 /* Build configuration list for PBXAggregateTarget "TikTokOpenSDK" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = TikTokOpenSDK;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		57242EDE7A07DD82A7B1122EF36675C0 /* Pods-Tiktok-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABFAA2A9E96E848A37031FA450432FF /* Pods-Tiktok-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDA8F2469AFD52BE6CADD5B205B86B05 /* Pods-Tiktok-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6DD5D2E05B4E21481BDD99E61DB43D /* Pods-Tiktok-dummy.m */; };
-		FE3B1D2E9424174E143BC6E840DD9C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		102445A3CC3BAF427F4532AFEBAA0E53 /* PKCE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D815A6BE76253755B9E5A54B33DBB3A /* PKCE.swift */; };
+		1B50EAFE4F1D05254131FFAB5CA6BFC6 /* Pods-Tiktok-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABFAA2A9E96E848A37031FA450432FF /* Pods-Tiktok-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31B6B6C17E7D5CA655B52B7F4AFAA96D /* TikTokAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E91B1F273D5D570AE3CEC1DEE118A /* TikTokAuthRequest.swift */; };
+		40D353C8B473F7425AC44BFBED8D004A /* TikTokShareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49006DA7391F72C25F14F98144B16445 /* TikTokShareResponse.swift */; };
+		538828D24544790E866177184A4284E0 /* TikTokOpenShareSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B9135771F74991F09C74C5C0BD87BB /* TikTokOpenShareSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5757F746AD6215899C45BCFD281FC318 /* TikTokAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2940BA8EEEC3D5B94593DB3F42747 /* TikTokAuthResponse.swift */; };
+		5A713B10EBAF1FA05268D5787889B7BE /* TikTokOpenSDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C69732AEFA7A5DD0AC2BB6CC81F4A206 /* TikTokOpenSDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606599C11FEDFAF64653108B079D76AA /* TikTokAuthRequest+URLParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D73358F340B92B3F31E7D94E8438F5 /* TikTokAuthRequest+URLParams.swift */; };
+		68345DC7F99358522FE019DB016BC118 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */; };
+		6E2B4D885CF70031F82F617DCF2EA739 /* TikTokUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C673C4FBA881CE2D4DF21B18E52F2142 /* TikTokUtils.swift */; };
+		926C3A99CF8DFF341672689182349898 /* TikTokRSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AF7898A1933F87896CF3270F69B24E /* TikTokRSA.swift */; };
+		9AC63010533AB75D2F8C680849A0B01C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
+		9AE2FC3212020A5626B7A23397BA456F /* TikTokOpenSDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC0E44FA778A7BE03D116397135596 /* TikTokOpenSDKCore-dummy.m */; };
+		AA28DBCA34877013AB87CD4CFB957AEC /* TikTokURLQueryParamsConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE21C4BCE603A8071FFD7A7A0FAA26 /* TikTokURLQueryParamsConvertible.swift */; };
+		B16C0669DF96FD8E238EB97E20CC9992 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
+		B3C4B22936A8BA5C204C010F16B03854 /* Pods-Tiktok-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6DD5D2E05B4E21481BDD99E61DB43D /* Pods-Tiktok-dummy.m */; };
+		B45927DFFB60B650F3A86B0B4C2448C6 /* TikTokShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95763C627A15EC411D4C6FE0A7867E8D /* TikTokShareService.swift */; };
+		B536CBCD0D2B8D9A6E21F8E6615FC797 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
+		BA166D2542877C0A3EAB4147EFC6CC24 /* TikTokURLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A23B6BB51F2CB5E7CC3DCA0EF634DD /* TikTokURLOpener.swift */; };
+		BA2C938A28D288AF7E80133931B1B1D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */; };
+		BEFC086633FE46B79F45A5F08874CEBA /* TikTokAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6A4E681FCD5599978C6F297D9BFCE /* TikTokAuthService.swift */; };
+		C1AE8E0D416C52A5E6587BA3A3CED1A1 /* TikTokInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBA932AEC1D3067A59AD4A3748B7AA5 /* TikTokInfo.swift */; };
+		C6A6F280ABE81D0943DA2EE4B8EAEC94 /* TikTokAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F63196BFED710A5CC6A6EDD9050536 /* TikTokAPI.swift */; };
+		C8B38856DE158095D7A424AE345D2738 /* TikTokURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B88B325B655B0A319E422E3327089 /* TikTokURLHandler.swift */; };
+		CAB6F1710E1E84CFD60BBC3E1A449C80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */; };
+		DAB53A512E5AD06E6D8361ADAA6536FD /* TikTokOpenAuthSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3329A865C9FB180391412378DC0BEAC /* TikTokOpenAuthSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3FDB05EBF07C9D0581C77D762DC9DC /* TikTokShareRequest+URLParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F19D12ED497F34B20704DD2C3707ED7 /* TikTokShareRequest+URLParams.swift */; };
+		E3E65906B55E95FBBFA8C47D376BD8A4 /* TikTokOpenAuthSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FD7E6F20992916336F7E548D1558F8 /* TikTokOpenAuthSDK-dummy.m */; };
+		E79C6CA07150FC61DFC14852B141F35A /* TikTokResponseHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8EA2CAE5FE6ECBE2EAD2F8E7B6C87 /* TikTokResponseHandling.swift */; };
+		E7D5A552A6199BCB4E1D208CE71F2235 /* TikTokRequestHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA491D1B6F1E8FF0DE370FF9140F2F /* TikTokRequestHandling.swift */; };
+		E8C59B9D06F79ABCD3C4B7C300603229 /* TikTokOpenShareSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF5195AE013354FE727263152CAFAEC /* TikTokOpenShareSDK-dummy.m */; };
+		EBAC5F56CE7764E625560AEA1960A653 /* TikTokBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD0ADAF6B108F03BA397B0BD6787A60 /* TikTokBase.swift */; };
+		EE398CF047786FBF57D698022716BEFC /* TikTokShareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC590695C9365D82A0F66A4DE024865 /* TikTokShareRequest.swift */; };
+		EE8FEA3629DFB51D85631D6841133FEA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F84C2F2F12231A8BDB489A37492222 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D57F0C5FE41EF0E66DB81EEF9F454003 /* PBXContainerItemProxy */ = {
+		02E8826505DF05F2217A3394A0A77ADB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0026B007D5D7066966D3EEDABF038BFC;
-			remoteInfo = TikTokOpenSDK;
+			remoteGlobalIDString = 78B4515FAB1E0FFFB745A25604B3FB8B;
+			remoteInfo = TikTokOpenSDKCore;
+		};
+		5C69DFD1F1B0F76B5B11EE79B7745488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78B4515FAB1E0FFFB745A25604B3FB8B;
+			remoteInfo = TikTokOpenSDKCore;
+		};
+		65E013C5CCD31D2F3FBE05FD9F1727AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78B4515FAB1E0FFFB745A25604B3FB8B;
+			remoteInfo = TikTokOpenSDKCore;
+		};
+		DBDDD8B6D2212B5C201EE42B2F2F97BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E91258179E416DA8643E9552CF50E6;
+			remoteInfo = TikTokOpenAuthSDK;
+		};
+		E3D7E2BD19CC318A929A7379E8B42D20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B3309B601FB16F145F7BC367698E3AB;
+			remoteInfo = TikTokOpenShareSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05C7C4EF46D9303491668418A24FDCF8 /* TikTokOpenSDKApplicationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TikTokOpenSDKApplicationDelegate.h; path = TikTokOpenSDK.framework/Headers/TikTokOpenSDKApplicationDelegate.h; sourceTree = "<group>"; };
-		13B87435438FF14D9CEFB04094C9D661 /* TikTokOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TikTokOpenSDK.framework; sourceTree = "<group>"; };
+		02D210332AA5C02A3E39ADD850DA6BD3 /* TikTokOpenAuthSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TikTokOpenAuthSDK.modulemap; sourceTree = "<group>"; };
+		03E2940BA8EEEC3D5B94593DB3F42747 /* TikTokAuthResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokAuthResponse.swift; path = Sources/TikTokOpenAuthSDK/Public/TikTokAuthResponse.swift; sourceTree = "<group>"; };
+		0B11D1C57C21745F601913853DB72C6B /* TikTokOpenShareSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TikTokOpenShareSDK.modulemap; sourceTree = "<group>"; };
+		1260BC747D297100091716FEB1B18A80 /* TikTokOpenSDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TikTokOpenSDKCore.modulemap; sourceTree = "<group>"; };
+		14BE21C4BCE603A8071FFD7A7A0FAA26 /* TikTokURLQueryParamsConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokURLQueryParamsConvertible.swift; path = Sources/TikTokOpenSDKCore/Internal/TikTokURLQueryParamsConvertible.swift; sourceTree = "<group>"; };
+		14F84C2F2F12231A8BDB489A37492222 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		15BBCF386CF321F0753A99929A3173CE /* TikTokOpenAuthSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TikTokOpenAuthSDK; path = TikTokOpenAuthSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A70C2DCF44DA4B76F363AE68125E48 /* Pods-Tiktok-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tiktok-acknowledgements.plist"; sourceTree = "<group>"; };
+		18DB4B9070B774716C8359F310CD9658 /* TikTokOpenShareSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TikTokOpenShareSDK-prefix.pch"; sourceTree = "<group>"; };
+		22FE420B599D456CE06F02647D23C35B /* TikTokOpenShareSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenShareSDK.debug.xcconfig; sourceTree = "<group>"; };
 		335B4C6929E812D71F09822AF9746F48 /* Pods-Tiktok.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tiktok.modulemap"; sourceTree = "<group>"; };
-		406E3B359C037F7648992AAA66B312D9 /* TikTokOpenSDKObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TikTokOpenSDKObjects.h; path = TikTokOpenSDK.framework/Headers/TikTokOpenSDKObjects.h; sourceTree = "<group>"; };
-		658AA48F9598BC044CB0BEF30D6730C6 /* TikTokOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenSDK.release.xcconfig; sourceTree = "<group>"; };
+		36F2C465B250129C1B3C996B7DB97D35 /* TikTokOpenShareSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenShareSDK.release.xcconfig; sourceTree = "<group>"; };
+		3851109CCDE88D7B3BBAE13D4B41C7A1 /* TikTokOpenSDKCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenSDKCore.release.xcconfig; sourceTree = "<group>"; };
+		3F1F9399180629A10B69B196A770D99E /* TikTokOpenAuthSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenAuthSDK.release.xcconfig; sourceTree = "<group>"; };
+		49006DA7391F72C25F14F98144B16445 /* TikTokShareResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokShareResponse.swift; path = Sources/TikTokOpenShareSDK/Public/TikTokShareResponse.swift; sourceTree = "<group>"; };
+		4DE5F62A39DB596429B5CCD8368DE2FD /* TikTokOpenSDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TikTokOpenSDKCore-prefix.pch"; sourceTree = "<group>"; };
+		4F19D12ED497F34B20704DD2C3707ED7 /* TikTokShareRequest+URLParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TikTokShareRequest+URLParams.swift"; path = "Sources/TikTokOpenShareSDK/Public/TikTokShareRequest+URLParams.swift"; sourceTree = "<group>"; };
+		55FD7E6F20992916336F7E548D1558F8 /* TikTokOpenAuthSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TikTokOpenAuthSDK-dummy.m"; sourceTree = "<group>"; };
+		56AF7898A1933F87896CF3270F69B24E /* TikTokRSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokRSA.swift; path = Sources/TikTokOpenSDKCore/Utils/TikTokRSA.swift; sourceTree = "<group>"; };
+		588E91B1F273D5D570AE3CEC1DEE118A /* TikTokAuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokAuthRequest.swift; path = Sources/TikTokOpenAuthSDK/Public/TikTokAuthRequest.swift; sourceTree = "<group>"; };
+		6098C2157A0FF2C50B122F6DF285DE96 /* TikTokOpenShareSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TikTokOpenShareSDK; path = TikTokOpenShareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6ABFAA2A9E96E848A37031FA450432FF /* Pods-Tiktok-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tiktok-umbrella.h"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7EA3038C3FA74D039119589BF7F2004C /* TikTokOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
+		6DD0ADAF6B108F03BA397B0BD6787A60 /* TikTokBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokBase.swift; path = Sources/TikTokOpenSDKCore/Internal/TikTokBase.swift; sourceTree = "<group>"; };
+		7D815A6BE76253755B9E5A54B33DBB3A /* PKCE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCE.swift; path = Sources/TikTokOpenAuthSDK/Public/PKCE.swift; sourceTree = "<group>"; };
+		7DAA491D1B6F1E8FF0DE370FF9140F2F /* TikTokRequestHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokRequestHandling.swift; path = Sources/TikTokOpenSDKCore/Internal/TikTokRequestHandling.swift; sourceTree = "<group>"; };
+		8221D1459993F2AE5249215D5D5AF10D /* TikTokOpenSDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TikTokOpenSDKCore-Info.plist"; sourceTree = "<group>"; };
+		8B5850CBCB93661F27357FD2F6645FE5 /* TikTokOpenAuthSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenAuthSDK.debug.xcconfig; sourceTree = "<group>"; };
+		8BC9DAE3291C98C7344B3BBCACADFB79 /* TikTokOpenShareSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TikTokOpenShareSDK-Info.plist"; sourceTree = "<group>"; };
 		90FD9DD35C95D05E805DE3F610B6F9AD /* Pods-Tiktok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tiktok.release.xcconfig"; sourceTree = "<group>"; };
+		94C6A4E681FCD5599978C6F297D9BFCE /* TikTokAuthService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokAuthService.swift; path = Sources/TikTokOpenAuthSDK/Service/TikTokAuthService.swift; sourceTree = "<group>"; };
+		95763C627A15EC411D4C6FE0A7867E8D /* TikTokShareService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokShareService.swift; path = Sources/TikTokOpenShareSDK/Service/TikTokShareService.swift; sourceTree = "<group>"; };
+		99F63196BFED710A5CC6A6EDD9050536 /* TikTokAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokAPI.swift; path = Sources/TikTokOpenSDKCore/Service/TikTokAPI.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A13EA87B54512779473D781BA4161569 /* TikTokOpenSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TikTokOpenSDK-umbrella.h"; path = "TikTokOpenSDK.framework/Headers/TikTokOpenSDK-umbrella.h"; sourceTree = "<group>"; };
+		A0B9135771F74991F09C74C5C0BD87BB /* TikTokOpenShareSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TikTokOpenShareSDK-umbrella.h"; sourceTree = "<group>"; };
+		ADB8EA2CAE5FE6ECBE2EAD2F8E7B6C87 /* TikTokResponseHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokResponseHandling.swift; path = Sources/TikTokOpenSDKCore/Internal/TikTokResponseHandling.swift; sourceTree = "<group>"; };
+		B3329A865C9FB180391412378DC0BEAC /* TikTokOpenAuthSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TikTokOpenAuthSDK-umbrella.h"; sourceTree = "<group>"; };
 		B45EA10C4EE306B23AA3672D14EBB857 /* Pods-Tiktok-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tiktok-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B4A05D1B381864183BB822DDF7AE03E0 /* Pods_Tiktok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tiktok.framework; path = "Pods-Tiktok.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A05D1B381864183BB822DDF7AE03E0 /* Pods-Tiktok */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Tiktok"; path = Pods_Tiktok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83013AF525EFAE47876D114E1C99698 /* Pods-Tiktok-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tiktok-Info.plist"; sourceTree = "<group>"; };
-		D5482C41C6CF3795588DE1AE034CF47D /* TikTokOpenSDKAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TikTokOpenSDKAuth.h; path = TikTokOpenSDK.framework/Headers/TikTokOpenSDKAuth.h; sourceTree = "<group>"; };
+		BEC590695C9365D82A0F66A4DE024865 /* TikTokShareRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokShareRequest.swift; path = Sources/TikTokOpenShareSDK/Public/TikTokShareRequest.swift; sourceTree = "<group>"; };
+		C2506B4693A117F4F9C1D94C9D963BE0 /* TikTokOpenSDKCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TikTokOpenSDKCore.debug.xcconfig; sourceTree = "<group>"; };
+		C673C4FBA881CE2D4DF21B18E52F2142 /* TikTokUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokUtils.swift; path = Sources/TikTokOpenSDKCore/Utils/TikTokUtils.swift; sourceTree = "<group>"; };
+		C69732AEFA7A5DD0AC2BB6CC81F4A206 /* TikTokOpenSDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TikTokOpenSDKCore-umbrella.h"; sourceTree = "<group>"; };
+		D941C59438040198FDD4D1D30A381B96 /* TikTokOpenAuthSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TikTokOpenAuthSDK-Info.plist"; sourceTree = "<group>"; };
 		DE6DD5D2E05B4E21481BDD99E61DB43D /* Pods-Tiktok-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tiktok-dummy.m"; sourceTree = "<group>"; };
+		E2D73358F340B92B3F31E7D94E8438F5 /* TikTokAuthRequest+URLParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TikTokAuthRequest+URLParams.swift"; path = "Sources/TikTokOpenAuthSDK/Public/TikTokAuthRequest+URLParams.swift"; sourceTree = "<group>"; };
+		E9FC0E44FA778A7BE03D116397135596 /* TikTokOpenSDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TikTokOpenSDKCore-dummy.m"; sourceTree = "<group>"; };
+		ECF5195AE013354FE727263152CAFAEC /* TikTokOpenShareSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TikTokOpenShareSDK-dummy.m"; sourceTree = "<group>"; };
+		EEBA932AEC1D3067A59AD4A3748B7AA5 /* TikTokInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokInfo.swift; path = Sources/TikTokOpenSDKCore/Utils/TikTokInfo.swift; sourceTree = "<group>"; };
+		F20245786842CD8B502FF8C1A748BEB8 /* TikTokOpenAuthSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TikTokOpenAuthSDK-prefix.pch"; sourceTree = "<group>"; };
+		F2A23B6BB51F2CB5E7CC3DCA0EF634DD /* TikTokURLOpener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokURLOpener.swift; path = Sources/TikTokOpenSDKCore/Internal/TikTokURLOpener.swift; sourceTree = "<group>"; };
+		F56F269A51BA5CDCC16C166D0239B042 /* TikTokOpenSDKCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TikTokOpenSDKCore; path = TikTokOpenSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		FB3E6D681DB323336C8ED577390C8F65 /* Pods-Tiktok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tiktok.debug.xcconfig"; sourceTree = "<group>"; };
+		FD3B88B325B655B0A319E422E3327089 /* TikTokURLHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TikTokURLHandler.swift; path = Sources/TikTokOpenSDKCore/Public/TikTokURLHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E44C4E1E81DAF5D8FEABFF9CE1C885D1 /* Frameworks */ = {
+		30DA2A79E8202A57260FC792AD6B9966 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3B1D2E9424174E143BC6E840DD9C3F /* Foundation.framework in Frameworks */,
+				CAB6F1710E1E84CFD60BBC3E1A449C80 /* Foundation.framework in Frameworks */,
+				BA2C938A28D288AF7E80133931B1B1D9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387B3895184BD4984B7673BCC52E3E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16C0669DF96FD8E238EB97E20CC9992 /* Foundation.framework in Frameworks */,
+				68345DC7F99358522FE019DB016BC118 /* UIKit.framework in Frameworks */,
+				EE8FEA3629DFB51D85631D6841133FEA /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFE5CCF849A5DE95FFFD5AB272C0598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC63010533AB75D2F8C680849A0B01C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D488BCE37FB6019313CBB72D0268A7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B536CBCD0D2B8D9A6E21F8E6615FC797 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D837DA30CE6E4E4F7A93CE0DFD0628F /* Products */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4A05D1B381864183BB822DDF7AE03E0 /* Pods_Tiktok.framework */,
+				4C9B21C82F9F434A1F20F0753288DC41 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		35415BB19B37D03EA094C8E5433C967B /* Pods-Tiktok */ = {
@@ -91,45 +203,76 @@
 			path = "Target Support Files/Pods-Tiktok";
 			sourceTree = "<group>";
 		};
-		4327751689BCC4263FC599F2454D70CA /* Support Files */ = {
+		4C9B21C82F9F434A1F20F0753288DC41 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7EA3038C3FA74D039119589BF7F2004C /* TikTokOpenSDK.debug.xcconfig */,
-				658AA48F9598BC044CB0BEF30D6730C6 /* TikTokOpenSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TikTokOpenSDK";
-			sourceTree = "<group>";
-		};
-		52E54DA8EB07E36A23C84E6837F7711A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				13B87435438FF14D9CEFB04094C9D661 /* TikTokOpenSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				6406D347F5B7E18CF968F77629C4F06E /* Foundation.framework */,
+				F9C27F7E6D7B02625DF3B111E5192591 /* UIKit.framework */,
+				14F84C2F2F12231A8BDB489A37492222 /* WebKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7422EC6704DB9D6E0ADBB715DA6253C7 /* TikTokOpenSDK */ = {
+		6887F8D9E5239AB055B594CF9B23F4EB /* TikTokOpenSDKCore */ = {
 			isa = PBXGroup;
 			children = (
-				A13EA87B54512779473D781BA4161569 /* TikTokOpenSDK-umbrella.h */,
-				05C7C4EF46D9303491668418A24FDCF8 /* TikTokOpenSDKApplicationDelegate.h */,
-				D5482C41C6CF3795588DE1AE034CF47D /* TikTokOpenSDKAuth.h */,
-				406E3B359C037F7648992AAA66B312D9 /* TikTokOpenSDKObjects.h */,
-				20B0CA696D08403B4AEC72338D729B82 /* TikTokOpenSDKShare.h */,
-				52E54DA8EB07E36A23C84E6837F7711A /* Frameworks */,
-				4327751689BCC4263FC599F2454D70CA /* Support Files */,
+				980D7F395536B61F914DACAD59B0ADB1 /* Core */,
+				DEEE41C98A4E22DF9F15BA992E786E8D /* Support Files */,
 			);
-			name = TikTokOpenSDK;
-			path = TikTokOpenSDK;
+			name = TikTokOpenSDKCore;
+			path = TikTokOpenSDKCore;
+			sourceTree = "<group>";
+		};
+		691E11F2CC5313ECA78177B2217B5408 /* TikTokOpenAuthSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FE1301EB3551B1B919105191F5F326B6 /* Auth */,
+				7E157314258D803F5C20A7263518C030 /* Support Files */,
+			);
+			name = TikTokOpenAuthSDK;
+			path = TikTokOpenAuthSDK;
+			sourceTree = "<group>";
+		};
+		7975E4B746F3508E31FB64C5CF702BAB /* TikTokOpenShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C87C1D64EB496F09811F806946416D1A /* Share */,
+				D84EB15186DAF366DBCCA72652CF90AB /* Support Files */,
+			);
+			name = TikTokOpenShareSDK;
+			path = TikTokOpenShareSDK;
+			sourceTree = "<group>";
+		};
+		7E157314258D803F5C20A7263518C030 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02D210332AA5C02A3E39ADD850DA6BD3 /* TikTokOpenAuthSDK.modulemap */,
+				55FD7E6F20992916336F7E548D1558F8 /* TikTokOpenAuthSDK-dummy.m */,
+				D941C59438040198FDD4D1D30A381B96 /* TikTokOpenAuthSDK-Info.plist */,
+				F20245786842CD8B502FF8C1A748BEB8 /* TikTokOpenAuthSDK-prefix.pch */,
+				B3329A865C9FB180391412378DC0BEAC /* TikTokOpenAuthSDK-umbrella.h */,
+				8B5850CBCB93661F27357FD2F6645FE5 /* TikTokOpenAuthSDK.debug.xcconfig */,
+				3F1F9399180629A10B69B196A770D99E /* TikTokOpenAuthSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TikTokOpenAuthSDK";
+			sourceTree = "<group>";
+		};
+		980D7F395536B61F914DACAD59B0ADB1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				99F63196BFED710A5CC6A6EDD9050536 /* TikTokAPI.swift */,
+				6DD0ADAF6B108F03BA397B0BD6787A60 /* TikTokBase.swift */,
+				EEBA932AEC1D3067A59AD4A3748B7AA5 /* TikTokInfo.swift */,
+				7DAA491D1B6F1E8FF0DE370FF9140F2F /* TikTokRequestHandling.swift */,
+				ADB8EA2CAE5FE6ECBE2EAD2F8E7B6C87 /* TikTokResponseHandling.swift */,
+				56AF7898A1933F87896CF3270F69B24E /* TikTokRSA.swift */,
+				FD3B88B325B655B0A319E422E3327089 /* TikTokURLHandler.swift */,
+				F2A23B6BB51F2CB5E7CC3DCA0EF634DD /* TikTokURLOpener.swift */,
+				14BE21C4BCE603A8071FFD7A7A0FAA26 /* TikTokURLQueryParamsConvertible.swift */,
+				C673C4FBA881CE2D4DF21B18E52F2142 /* TikTokUtils.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		992B6FB53AC700122EAB2EC3E4D600A5 /* Targets Support Files */ = {
@@ -140,64 +283,204 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		C87C1D64EB496F09811F806946416D1A /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				BEC590695C9365D82A0F66A4DE024865 /* TikTokShareRequest.swift */,
+				4F19D12ED497F34B20704DD2C3707ED7 /* TikTokShareRequest+URLParams.swift */,
+				49006DA7391F72C25F14F98144B16445 /* TikTokShareResponse.swift */,
+				95763C627A15EC411D4C6FE0A7867E8D /* TikTokShareService.swift */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E0403F03C9D58F775C1033092560E9F7 /* Pods */,
-				1D837DA30CE6E4E4F7A93CE0DFD0628F /* Products */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				FBC21E511212D6A2D9DFE91CC1D41426 /* Pods */,
+				EFD4E6FB2DE97DBB1E464201977A01A7 /* Products */,
 				992B6FB53AC700122EAB2EC3E4D600A5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D84EB15186DAF366DBCCA72652CF90AB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				0B11D1C57C21745F601913853DB72C6B /* TikTokOpenShareSDK.modulemap */,
+				ECF5195AE013354FE727263152CAFAEC /* TikTokOpenShareSDK-dummy.m */,
+				8BC9DAE3291C98C7344B3BBCACADFB79 /* TikTokOpenShareSDK-Info.plist */,
+				18DB4B9070B774716C8359F310CD9658 /* TikTokOpenShareSDK-prefix.pch */,
+				A0B9135771F74991F09C74C5C0BD87BB /* TikTokOpenShareSDK-umbrella.h */,
+				22FE420B599D456CE06F02647D23C35B /* TikTokOpenShareSDK.debug.xcconfig */,
+				36F2C465B250129C1B3C996B7DB97D35 /* TikTokOpenShareSDK.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/TikTokOpenShareSDK";
 			sourceTree = "<group>";
 		};
-		E0403F03C9D58F775C1033092560E9F7 /* Pods */ = {
+		DEEE41C98A4E22DF9F15BA992E786E8D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7422EC6704DB9D6E0ADBB715DA6253C7 /* TikTokOpenSDK */,
+				1260BC747D297100091716FEB1B18A80 /* TikTokOpenSDKCore.modulemap */,
+				E9FC0E44FA778A7BE03D116397135596 /* TikTokOpenSDKCore-dummy.m */,
+				8221D1459993F2AE5249215D5D5AF10D /* TikTokOpenSDKCore-Info.plist */,
+				4DE5F62A39DB596429B5CCD8368DE2FD /* TikTokOpenSDKCore-prefix.pch */,
+				C69732AEFA7A5DD0AC2BB6CC81F4A206 /* TikTokOpenSDKCore-umbrella.h */,
+				C2506B4693A117F4F9C1D94C9D963BE0 /* TikTokOpenSDKCore.debug.xcconfig */,
+				3851109CCDE88D7B3BBAE13D4B41C7A1 /* TikTokOpenSDKCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TikTokOpenSDKCore";
+			sourceTree = "<group>";
+		};
+		EFD4E6FB2DE97DBB1E464201977A01A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4A05D1B381864183BB822DDF7AE03E0 /* Pods-Tiktok */,
+				15BBCF386CF321F0753A99929A3173CE /* TikTokOpenAuthSDK */,
+				F56F269A51BA5CDCC16C166D0239B042 /* TikTokOpenSDKCore */,
+				6098C2157A0FF2C50B122F6DF285DE96 /* TikTokOpenShareSDK */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC21E511212D6A2D9DFE91CC1D41426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				691E11F2CC5313ECA78177B2217B5408 /* TikTokOpenAuthSDK */,
+				6887F8D9E5239AB055B594CF9B23F4EB /* TikTokOpenSDKCore */,
+				7975E4B746F3508E31FB64C5CF702BAB /* TikTokOpenShareSDK */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE1301EB3551B1B919105191F5F326B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7D815A6BE76253755B9E5A54B33DBB3A /* PKCE.swift */,
+				588E91B1F273D5D570AE3CEC1DEE118A /* TikTokAuthRequest.swift */,
+				E2D73358F340B92B3F31E7D94E8438F5 /* TikTokAuthRequest+URLParams.swift */,
+				03E2940BA8EEEC3D5B94593DB3F42747 /* TikTokAuthResponse.swift */,
+				94C6A4E681FCD5599978C6F297D9BFCE /* TikTokAuthService.swift */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9A6E2FEB05FFBC1E7FA6CB99553870DD /* Headers */ = {
+		1036BDCF6E93D403C62441740F9C2651 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57242EDE7A07DD82A7B1122EF36675C0 /* Pods-Tiktok-umbrella.h in Headers */,
+				1B50EAFE4F1D05254131FFAB5CA6BFC6 /* Pods-Tiktok-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418073B6867C87B3162EF630CB7B0ED1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB53A512E5AD06E6D8361ADAA6536FD /* TikTokOpenAuthSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7654D48161C9ED73F98FBFC13D811659 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538828D24544790E866177184A4284E0 /* TikTokOpenShareSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57FAFB389C6271E24BA615E982FE537 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A713B10EBAF1FA05268D5787889B7BE /* TikTokOpenSDKCore-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		98343870A959FCBFCD2621F47DA79F5A /* Pods-Tiktok */ = {
+		6B3309B601FB16F145F7BC367698E3AB /* TikTokOpenShareSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE95CDCCC76DC0548D82EF9B979DF34F /* Build configuration list for PBXNativeTarget "Pods-Tiktok" */;
+			buildConfigurationList = F7C7587957405FF3BBDEE887725B5806 /* Build configuration list for PBXNativeTarget "TikTokOpenShareSDK" */;
 			buildPhases = (
-				9A6E2FEB05FFBC1E7FA6CB99553870DD /* Headers */,
-				F0EDCF150DE78FCC7B87EBC009094C71 /* Sources */,
-				E44C4E1E81DAF5D8FEABFF9CE1C885D1 /* Frameworks */,
-				2055BC0EB698599F8F95DD0FAF86CD9B /* Resources */,
+				7654D48161C9ED73F98FBFC13D811659 /* Headers */,
+				161B76FE1EF81251F63B12257763096F /* Sources */,
+				30DA2A79E8202A57260FC792AD6B9966 /* Frameworks */,
+				FACA07379BB411262EACC3D196EE6C8C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6691EDF21D6FA6DEAE425B4A1FF2A204 /* PBXTargetDependency */,
+				C9B1E0FE05EFCCB14BC1D55BC8D0BEA9 /* PBXTargetDependency */,
+			);
+			name = TikTokOpenShareSDK;
+			productName = TikTokOpenShareSDK;
+			productReference = 6098C2157A0FF2C50B122F6DF285DE96 /* TikTokOpenShareSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		78B4515FAB1E0FFFB745A25604B3FB8B /* TikTokOpenSDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5C42A444F7CD6E22C43A50873109B2 /* Build configuration list for PBXNativeTarget "TikTokOpenSDKCore" */;
+			buildPhases = (
+				A57FAFB389C6271E24BA615E982FE537 /* Headers */,
+				C4138AFC5B4C7CAD6A9E2233BF2730AB /* Sources */,
+				D488BCE37FB6019313CBB72D0268A7E2 /* Frameworks */,
+				4E008BDCF5FA0817B745B2FC085C62F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikTokOpenSDKCore;
+			productName = TikTokOpenSDKCore;
+			productReference = F56F269A51BA5CDCC16C166D0239B042 /* TikTokOpenSDKCore */;
+			productType = "com.apple.product-type.framework";
+		};
+		98343870A959FCBFCD2621F47DA79F5A /* Pods-Tiktok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CF4B9F8C416FFE31DE789E6FB160FF2 /* Build configuration list for PBXNativeTarget "Pods-Tiktok" */;
+			buildPhases = (
+				1036BDCF6E93D403C62441740F9C2651 /* Headers */,
+				67749681CCDB3EB86AC054E722DAC4A9 /* Sources */,
+				CBFE5CCF849A5DE95FFFD5AB272C0598 /* Frameworks */,
+				0BE43341650DCB187421B5239B3DC3A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9C0F835CD12B6D5DF8C2FDC415D16B9 /* PBXTargetDependency */,
+				E57E7F6096B031A32CF6F6D8F430C396 /* PBXTargetDependency */,
+				DB3CC79C8DDA5B5E0FB64B26EB12A0ED /* PBXTargetDependency */,
 			);
 			name = "Pods-Tiktok";
-			productName = "Pods-Tiktok";
-			productReference = B4A05D1B381864183BB822DDF7AE03E0 /* Pods_Tiktok.framework */;
+			productName = Pods_Tiktok;
+			productReference = B4A05D1B381864183BB822DDF7AE03E0 /* Pods-Tiktok */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9E91258179E416DA8643E9552CF50E6 /* TikTokOpenAuthSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82428FF27A9D61D34FC333AE304464C6 /* Build configuration list for PBXNativeTarget "TikTokOpenAuthSDK" */;
+			buildPhases = (
+				418073B6867C87B3162EF630CB7B0ED1 /* Headers */,
+				1682D543BE8A3DB5A88898CBB5247200 /* Sources */,
+				387B3895184BD4984B7673BCC52E3E49 /* Frameworks */,
+				A28E4C6F49D311B1E0CE1C4C1EBB9861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91BDF05D3969E79BC0D833E45A17935D /* PBXTargetDependency */,
+			);
+			name = TikTokOpenAuthSDK;
+			productName = TikTokOpenAuthSDK;
+			productReference = 15BBCF386CF321F0753A99929A3173CE /* TikTokOpenAuthSDK */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -206,30 +489,53 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1D837DA30CE6E4E4F7A93CE0DFD0628F /* Products */;
+			productRefGroup = EFD4E6FB2DE97DBB1E464201977A01A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				98343870A959FCBFCD2621F47DA79F5A /* Pods-Tiktok */,
-				0026B007D5D7066966D3EEDABF038BFC /* TikTokOpenSDK */,
+				E9E91258179E416DA8643E9552CF50E6 /* TikTokOpenAuthSDK */,
+				78B4515FAB1E0FFFB745A25604B3FB8B /* TikTokOpenSDKCore */,
+				6B3309B601FB16F145F7BC367698E3AB /* TikTokOpenShareSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2055BC0EB698599F8F95DD0FAF86CD9B /* Resources */ = {
+		0BE43341650DCB187421B5239B3DC3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E008BDCF5FA0817B745B2FC085C62F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28E4C6F49D311B1E0CE1C4C1EBB9861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA07379BB411262EACC3D196EE6C8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,41 +545,260 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F0EDCF150DE78FCC7B87EBC009094C71 /* Sources */ = {
+		161B76FE1EF81251F63B12257763096F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA8F2469AFD52BE6CADD5B205B86B05 /* Pods-Tiktok-dummy.m in Sources */,
+				E8C59B9D06F79ABCD3C4B7C300603229 /* TikTokOpenShareSDK-dummy.m in Sources */,
+				EE398CF047786FBF57D698022716BEFC /* TikTokShareRequest.swift in Sources */,
+				DB3FDB05EBF07C9D0581C77D762DC9DC /* TikTokShareRequest+URLParams.swift in Sources */,
+				40D353C8B473F7425AC44BFBED8D004A /* TikTokShareResponse.swift in Sources */,
+				B45927DFFB60B650F3A86B0B4C2448C6 /* TikTokShareService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1682D543BE8A3DB5A88898CBB5247200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102445A3CC3BAF427F4532AFEBAA0E53 /* PKCE.swift in Sources */,
+				31B6B6C17E7D5CA655B52B7F4AFAA96D /* TikTokAuthRequest.swift in Sources */,
+				606599C11FEDFAF64653108B079D76AA /* TikTokAuthRequest+URLParams.swift in Sources */,
+				5757F746AD6215899C45BCFD281FC318 /* TikTokAuthResponse.swift in Sources */,
+				BEFC086633FE46B79F45A5F08874CEBA /* TikTokAuthService.swift in Sources */,
+				E3E65906B55E95FBBFA8C47D376BD8A4 /* TikTokOpenAuthSDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67749681CCDB3EB86AC054E722DAC4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C4B22936A8BA5C204C010F16B03854 /* Pods-Tiktok-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4138AFC5B4C7CAD6A9E2233BF2730AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A6F280ABE81D0943DA2EE4B8EAEC94 /* TikTokAPI.swift in Sources */,
+				EBAC5F56CE7764E625560AEA1960A653 /* TikTokBase.swift in Sources */,
+				C1AE8E0D416C52A5E6587BA3A3CED1A1 /* TikTokInfo.swift in Sources */,
+				9AE2FC3212020A5626B7A23397BA456F /* TikTokOpenSDKCore-dummy.m in Sources */,
+				E7D5A552A6199BCB4E1D208CE71F2235 /* TikTokRequestHandling.swift in Sources */,
+				E79C6CA07150FC61DFC14852B141F35A /* TikTokResponseHandling.swift in Sources */,
+				926C3A99CF8DFF341672689182349898 /* TikTokRSA.swift in Sources */,
+				C8B38856DE158095D7A424AE345D2738 /* TikTokURLHandler.swift in Sources */,
+				BA166D2542877C0A3EAB4147EFC6CC24 /* TikTokURLOpener.swift in Sources */,
+				AA28DBCA34877013AB87CD4CFB957AEC /* TikTokURLQueryParamsConvertible.swift in Sources */,
+				6E2B4D885CF70031F82F617DCF2EA739 /* TikTokUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6691EDF21D6FA6DEAE425B4A1FF2A204 /* PBXTargetDependency */ = {
+		91BDF05D3969E79BC0D833E45A17935D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TikTokOpenSDK;
-			target = 0026B007D5D7066966D3EEDABF038BFC /* TikTokOpenSDK */;
-			targetProxy = D57F0C5FE41EF0E66DB81EEF9F454003 /* PBXContainerItemProxy */;
+			name = TikTokOpenSDKCore;
+			target = 78B4515FAB1E0FFFB745A25604B3FB8B /* TikTokOpenSDKCore */;
+			targetProxy = 02E8826505DF05F2217A3394A0A77ADB /* PBXContainerItemProxy */;
+		};
+		A9C0F835CD12B6D5DF8C2FDC415D16B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TikTokOpenAuthSDK;
+			target = E9E91258179E416DA8643E9552CF50E6 /* TikTokOpenAuthSDK */;
+			targetProxy = DBDDD8B6D2212B5C201EE42B2F2F97BA /* PBXContainerItemProxy */;
+		};
+		C9B1E0FE05EFCCB14BC1D55BC8D0BEA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TikTokOpenSDKCore;
+			target = 78B4515FAB1E0FFFB745A25604B3FB8B /* TikTokOpenSDKCore */;
+			targetProxy = 5C69DFD1F1B0F76B5B11EE79B7745488 /* PBXContainerItemProxy */;
+		};
+		DB3CC79C8DDA5B5E0FB64B26EB12A0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TikTokOpenShareSDK;
+			target = 6B3309B601FB16F145F7BC367698E3AB /* TikTokOpenShareSDK */;
+			targetProxy = E3D7E2BD19CC318A929A7379E8B42D20 /* PBXContainerItemProxy */;
+		};
+		E57E7F6096B031A32CF6F6D8F430C396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TikTokOpenSDKCore;
+			target = 78B4515FAB1E0FFFB745A25604B3FB8B /* TikTokOpenSDKCore */;
+			targetProxy = 65E013C5CCD31D2F3FBE05FD9F1727AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1E97E59FEFAF1AC800D4D948A51B8DD7 /* Release */ = {
+		35745178C58142BD76FCFC72DB36C2B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 658AA48F9598BC044CB0BEF30D6730C6 /* TikTokOpenSDK.release.xcconfig */;
+			baseConfigurationReference = C2506B4693A117F4F9C1D94C9D963BE0 /* TikTokOpenSDKCore.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TikTokOpenSDKCore/TikTokOpenSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TikTokOpenSDKCore/TikTokOpenSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TikTokOpenSDKCore/TikTokOpenSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = TikTokOpenSDKCore;
+				PRODUCT_NAME = TikTokOpenSDKCore;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		367EFE0128748B6F3E0EF6C0A94BC4CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1F9399180629A10B69B196A770D99E /* TikTokOpenAuthSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TikTokOpenAuthSDK/TikTokOpenAuthSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TikTokOpenAuthSDK/TikTokOpenAuthSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TikTokOpenAuthSDK/TikTokOpenAuthSDK.modulemap";
+				PRODUCT_MODULE_NAME = TikTokOpenAuthSDK;
+				PRODUCT_NAME = TikTokOpenAuthSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+		82F517AC2E0100D0C02B5CD7FCE6502A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90FD9DD35C95D05E805DE3F610B6F9AD /* Pods-Tiktok.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tiktok/Pods-Tiktok-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tiktok/Pods-Tiktok.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E22B074039D2AC7D639F6D361AA841A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3851109CCDE88D7B3BBAE13D4B41C7A1 /* TikTokOpenSDKCore.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TikTokOpenSDKCore/TikTokOpenSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TikTokOpenSDKCore/TikTokOpenSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TikTokOpenSDKCore/TikTokOpenSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = TikTokOpenSDKCore;
+				PRODUCT_NAME = TikTokOpenSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FBAA6F19FF651B0263E16D9EBF1DDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F2C465B250129C1B3C996B7DB97D35 /* TikTokOpenShareSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TikTokOpenShareSDK/TikTokOpenShareSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TikTokOpenShareSDK/TikTokOpenShareSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TikTokOpenShareSDK/TikTokOpenShareSDK.modulemap";
+				PRODUCT_MODULE_NAME = TikTokOpenShareSDK;
+				PRODUCT_NAME = TikTokOpenShareSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -323,7 +848,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,20 +860,71 @@
 			};
 			name = Release;
 		};
-		A921F61B1BAAF6F73F4F1E5B336F0565 /* Debug */ = {
+		ADE273FD914A8FC01BB891BB8D0F5831 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EA3038C3FA74D039119589BF7F2004C /* TikTokOpenSDK.debug.xcconfig */;
+			baseConfigurationReference = 22FE420B599D456CE06F02647D23C35B /* TikTokOpenShareSDK.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TikTokOpenShareSDK/TikTokOpenShareSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TikTokOpenShareSDK/TikTokOpenShareSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TikTokOpenShareSDK/TikTokOpenShareSDK.modulemap";
+				PRODUCT_MODULE_NAME = TikTokOpenShareSDK;
+				PRODUCT_NAME = TikTokOpenShareSDK;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		B461FD7BCCCABB2DD9B7B4C1EF432186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B5850CBCB93661F27357FD2F6645FE5 /* TikTokOpenAuthSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TikTokOpenAuthSDK/TikTokOpenAuthSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TikTokOpenAuthSDK/TikTokOpenAuthSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TikTokOpenAuthSDK/TikTokOpenAuthSDK.modulemap";
+				PRODUCT_MODULE_NAME = TikTokOpenAuthSDK;
+				PRODUCT_NAME = TikTokOpenAuthSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -401,7 +977,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -414,45 +990,12 @@
 			};
 			name = Debug;
 		};
-		DD5FEA933CBD10E3C1A0A3B6EDD400BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90FD9DD35C95D05E805DE3F610B6F9AD /* Pods-Tiktok.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Tiktok/Pods-Tiktok-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Tiktok/Pods-Tiktok.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F0522AE4189B24BBEAB7FE2E50DD4A3B /* Debug */ = {
+		B8B93F42A868F683DC65DDB760CD6538 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB3E6D681DB323336C8ED577390C8F65 /* Pods-Tiktok.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -464,7 +1007,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Tiktok/Pods-Tiktok-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Tiktok/Pods-Tiktok.modulemap";
@@ -484,29 +1027,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0CF4B9F8C416FFE31DE789E6FB160FF2 /* Build configuration list for PBXNativeTarget "Pods-Tiktok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B93F42A868F683DC65DDB760CD6538 /* Debug */,
+				82F517AC2E0100D0C02B5CD7FCE6502A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A5C42A444F7CD6E22C43A50873109B2 /* Build configuration list for PBXNativeTarget "TikTokOpenSDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35745178C58142BD76FCFC72DB36C2B1 /* Debug */,
+				8E22B074039D2AC7D639F6D361AA841A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE95CDCCC76DC0548D82EF9B979DF34F /* Build configuration list for PBXNativeTarget "Pods-Tiktok" */ = {
+		82428FF27A9D61D34FC333AE304464C6 /* Build configuration list for PBXNativeTarget "TikTokOpenAuthSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0522AE4189B24BBEAB7FE2E50DD4A3B /* Debug */,
-				DD5FEA933CBD10E3C1A0A3B6EDD400BC /* Release */,
+				B461FD7BCCCABB2DD9B7B4C1EF432186 /* Debug */,
+				367EFE0128748B6F3E0EF6C0A94BC4CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEC4D8F49FCEB9968221D6EE5F42C320 /* Build configuration list for PBXAggregateTarget "TikTokOpenSDK" */ = {
+		F7C7587957405FF3BBDEE887725B5806 /* Build configuration list for PBXNativeTarget "TikTokOpenShareSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A921F61B1BAAF6F73F4F1E5B336F0565 /* Debug */,
-				1E97E59FEFAF1AC800D4D948A51B8DD7 /* Release */,
+				ADE273FD914A8FC01BB891BB8D0F5831 /* Debug */,
+				8FBAA6F19FF651B0263E16D9EBF1DDD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
