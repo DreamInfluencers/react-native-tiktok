@@ -5,6 +5,9 @@
 //  Created by Mathias Marc Jensen on 08/08/2023.
 //
 
+import TikTokOpenSDKCore
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
@@ -23,5 +26,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.makeKeyAndVisible()
 
     return true
+  }
+  
+  func application(_ app: UIApplication,open url: URL,
+                   options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+      if (TikTokURLHandler.handleOpenURL(url)) {
+          return true
+      }
+      return false
+  }
+  
+  func application(_ application: UIApplication,
+                   continue userActivity: NSUserActivity,
+                   restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+      if (TikTokURLHandler.handleOpenURL(userActivity.webpageURL)) {
+          return true
+      }
+      return false
   }
 }

@@ -1,4 +1,4 @@
-import { NativeModules, NativeEventEmitter, Platform } from 'react-native';
+import { NativeEventEmitter, NativeModules, Platform } from 'react-native';
 import { response } from './response';
 const { Tiktok } = NativeModules;
 type ResponseType = {
@@ -9,11 +9,12 @@ export const auth = (
   stateKey: string,
   callback: (code: string, error: boolean | null, errMsg: string) => void
 ) => {
+	console.log(Tiktok)
   Tiktok.auth(stateKey, (resp: ResponseType) => {
     if (Platform.OS === 'ios') {
       switch (resp.status) {
         case response.success:
-          callback(resp.code, false, '');
+          callback(resp.code, false, '');	
           break;
         case response.networkError:
           callback('', true, 'Network Error');

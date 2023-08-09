@@ -13,6 +13,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E7601D0CA10729B2754AE975 /* libPods-example2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C996D23E7F23BB427BBC34C /* libPods-example2.a */; };
 		FA9ECDC62A8271D100D21804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9ECDC52A8271D100D21804 /* AppDelegate.swift */; };
+		FA9ECDC82A8279C500D21804 /* TikTok.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9ECDC72A8279C500D21804 /* TikTok.swift */; };
+		FA9ECDCC2A837B2500D21804 /* Tiktok.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9ECDCB2A837B2500D21804 /* Tiktok.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		F74EBCCE1FB38156CAF5F99D /* Pods-example2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example2.release.xcconfig"; path = "Target Support Files/Pods-example2/Pods-example2.release.xcconfig"; sourceTree = "<group>"; };
 		FA9ECDC42A8271D000D21804 /* example2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "example2-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA9ECDC52A8271D100D21804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA9ECDC72A8279C500D21804 /* TikTok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTok.swift; sourceTree = "<group>"; };
+		FA9ECDCB2A837B2500D21804 /* Tiktok.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tiktok.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				FA9ECDC52A8271D100D21804 /* AppDelegate.swift */,
 				FA9ECDC42A8271D000D21804 /* example2-Bridging-Header.h */,
+				FA9ECDC72A8279C500D21804 /* TikTok.swift */,
+				FA9ECDCB2A837B2500D21804 /* Tiktok.m */,
 			);
 			name = example2;
 			sourceTree = "<group>";
@@ -409,7 +415,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9ECDCC2A837B2500D21804 /* Tiktok.m in Sources */,
 				FA9ECDC62A8271D100D21804 /* AppDelegate.swift in Sources */,
+				FA9ECDC82A8279C500D21804 /* TikTok.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
